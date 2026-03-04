@@ -1,0 +1,7 @@
+Dans GameScreen.java, ajoute ces 2 lignes dans handleInput() (par ex. à la fin),
+pour tester la fin de partie rapidement :
+
+    if (Gdx.input.isKeyJustPressed(Input.Keys.W)) game.showEnd(true, 10);
+    if (Gdx.input.isKeyJustPressed(Input.Keys.L)) game.showEnd(false, 3);
+
+Note: il faut importer Input.Keys si tu ne l'as pas déjà.
